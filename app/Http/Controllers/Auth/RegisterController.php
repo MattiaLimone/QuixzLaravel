@@ -45,7 +45,7 @@ class RegisterController extends Controller
             'role' => $data['role'],
             'player_id' => $data['player_id'],
             'team_id' => $data['team_id'],
-            Mail::to($user['email'])->send(new Welcome($user)),
+           // Mail::to($user['email'])->send(new Welcome($user)), 
         ]);
     }
 
